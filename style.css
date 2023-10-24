@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+html, body{
+    background: url("imgs/bbbackground.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+table{
+    width: 100%;
+    font-size: 13px;
+}
+#openingtext{
+    font-size: 25px;
+    margin: 100px 0;
+    position: relative;
+    right: 200px;
+}
+#openingtext h1{
+    color: rgb(0, 77, 177);
+}
+#openingtext p{
+    color: white;
+}
+#copyright{
+ 
+    position: relative;
+    text-align: center;
+    color: white;
+    right: 296px;
+    font-size: 12px;
+}
+#image-container{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: 1;
+}
+#image-container p{
+    color: white;
+
+}
+
+#background-fade{
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    z-index: 1;
+    
+}
+#bigImg{
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+}
+
+#mainImg{
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    display: inline-block;
+}
+
+#left,#right{
+    font-size: 30px;
+    color: rgb(0, 77, 177);
+    position: absolute;
+    top: 50%;
+    display: none;
+    z-index: 3;
+    padding: 0 8px;
+    margin-top: -15px;
+
+}
+#rotate{
+    right: 0;
+    padding-left: 50%;
+    color: rgb(0, 77, 177);
+    position: absolute;
+    top: 0%;
+    display: none;
+    z-index: 3;
+    padding: 0 8px;
+    margin-top: 5px;
+}
+#right{
+    right: 0;
+    padding-left: 50%;
+}
+
+#rotateBox{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    z-index: 3;
+}
+#leftHalf{
+    position: absolute;
+    width: 50%;
+    height: 95%;
+    top: 5%;
+    z-index: 3;
+}
+#rightHalf{
+    position: absolute;
+    width: 50%;
+    height: 95%;
+    top: 5%;
+    right: 0;
+    z-index: 3;
+}
+.border{
+    position: relative;
+    right: 30%;
+    margin: 10px 5px;
+}
+.border:hover{
+    border: 5px white solid;
+}
+
+img
+{
+    color: white;
+}
+
+#img1, #img2, #img3{
+    width: 128px;
+    height: 192px;
+}
+
+
+#card2{
+    font-size: 12px;
+}
+#card2 table{
+    font-size: 8px;
+}
+#card3 table{
+    font-size: 12px;
+}
+
+
+@media (max-width: 1500px){
+    #img1, #img2, #img3{
+        width: 60px;
+        height: 100px;
+    }
+
+
+}
+@media (max-width: 700px){
+    #openingtext{
+        text-align: center;
+        font-size: 15px;
+        padding-left: 20px
+        
+        
+    }
+    #copyright{
+        top: 100px;
+        left: -20px;
+    }
+}
+@media (max-width: 560px){
+    #bigImg{
+        width: 440px;
+        height: 280px;
+        margin-left: -222px;
+        margin-top: -165px;
+    }
+    table{
+        font-size: 10px;
+    }
+}
